@@ -32,7 +32,9 @@ We will make a download for the SD card image available once the puppet build is
 Guides to copy the image to the SD card:
 
 Linux: http://www.raspberrypi.org/documentation/installation/installing-images/linux.md
+
 Mac: http://www.raspberrypi.org/documentation/installation/installing-images/mac.md
+
 Windows: http://www.raspberrypi.org/documentation/installation/installing-images/windows.md
 
 
