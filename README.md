@@ -12,7 +12,9 @@ Installation of Ubuntu Trusty Tahr 14.04 on Rasspberry PI
 Guides to copy the PI-Ubuntu image to an SD card
 ================================================
 Linux: http://www.raspberrypi.org/documentation/installation/installing-images/linux.md
+
 Mac: http://www.raspberrypi.org/documentation/installation/installing-images/mac.md
+
 Windows: http://www.raspberrypi.org/documentation/installation/installing-images/windows.md
 
 Installation of Puppet
@@ -38,6 +40,7 @@ We are working on a Puppet script to install the following Arpgate components:
 - MQTT
 - StrongSwarm
 - SQLLite3
+
 We will make a download for the SD card image available once the puppet build is completed
 
 The arpgate UI
