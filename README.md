@@ -2,9 +2,9 @@
 
 Requirements: Raspberry Pi 2 Model B, 8Gb micro SD card
 
-Installation of Ubuntu Trusty Tahr 14.04 on Rasspberry PI
+Installation of Ubuntu Trusty Tahr 14.04 on Raspberry Pi
 =========================================================
- https://wiki.ubuntu.com/ARM/RaspberryP
+ https://wiki.ubuntu.com/ARM/RaspberryPi
  
 Copy the image to your SD card
 ================================================
@@ -15,8 +15,8 @@ Mac: http://www.raspberrypi.org/documentation/installation/installing-images/mac
 Windows: http://www.raspberrypi.org/documentation/installation/installing-images/windows.md
 
 
-Installation of Puppet on the Raspberry
-========================================
+Installation of Puppet on the Raspberry Pi
+==========================================
 wget https://apt.puppetlabs.com/puppetlabs-release-precise.deb
 
 sudo dpkg -i puppetlabs-release-precise.deb
@@ -25,8 +25,8 @@ sudo apt-get update
 
 sudo apt-get install puppet
 
-Installation of Git on the Raspberry
-====================================
+Installation of Git on the Raspberry Pi
+=======================================
 sudo apt-get install git
 
 Checkout arpgate/puppet repository
