@@ -35,7 +35,9 @@ sudo apt-get install git
 Checkout arpgate/puppet repository
 ==================================
 git clone https://github.com/arpgate/puppet
+
 cd puppet
+
 sudo puppet apply manifests/arpgate.pp
 
 
