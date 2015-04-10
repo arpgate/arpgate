@@ -9,7 +9,7 @@ Installation of Ubuntu Trusty Tahr 14.04 on Rasspberry PI
 =========================================================
  https://wiki.ubuntu.com/ARM/RaspberryP
  
-Guides to copy the PI-Ubuntu image to an SD card
+Copy the PI-Ubuntu image to your SD card
 ================================================
 Linux: http://www.raspberrypi.org/documentation/installation/installing-images/linux.md
 
