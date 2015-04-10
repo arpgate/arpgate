@@ -37,8 +37,8 @@ We are working on a Puppet script to install the following Arpgate components:
 - Snort
 - MQTT
 - StrongSwarm
+- SQLLite3
 We will make a download for the SD card image available once the puppet build is completed
-
 
 The arpgate UI
 ==============
