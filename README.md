@@ -17,8 +17,9 @@ Mac: http://www.raspberrypi.org/documentation/installation/installing-images/mac
 
 Windows: http://www.raspberrypi.org/documentation/installation/installing-images/windows.md
 
-Installation of Puppet
-======================
+
+Installation of Puppet on the Raspberry
+========================================
 wget https://apt.puppetlabs.com/puppetlabs-release-precise.deb
 
 sudo dpkg -i puppetlabs-release-precise.deb
@@ -26,6 +27,17 @@ sudo dpkg -i puppetlabs-release-precise.deb
 sudo apt-get update
 
 sudo apt-get install puppet
+
+Installation of Git on the Raspberry
+====================================
+sudo apt-get install git
+
+Checkout arpgate/puppet repository
+==================================
+git clone https://github.com/arpgate/puppet
+cd puppet
+sudo puppet apply manifests/arpgate.pp
+
 
 Upcoming
 ========
