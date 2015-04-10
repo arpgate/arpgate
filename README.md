@@ -20,8 +20,11 @@ Windows: http://www.raspberrypi.org/documentation/installation/installing-images
 Installation of Puppet
 ======================
 wget https://apt.puppetlabs.com/puppetlabs-release-precise.deb
+
 sudo dpkg -i puppetlabs-release-precise.deb
+
 sudo apt-get update
+
 sudo apt-get install puppet
 
 Upcoming
