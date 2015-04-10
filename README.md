@@ -1,9 +1,6 @@
 # arpgate
 
-Requirements:
-
-Raspberry Pi 2 Model B
-8Gb micro SD card
+Requirements: Raspberry Pi 2 Model B, 8Gb micro SD card
 
 Installation of Ubuntu Trusty Tahr 14.04 on Rasspberry PI
 =========================================================
