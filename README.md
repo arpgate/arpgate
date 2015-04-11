@@ -8,6 +8,13 @@ Install Ubuntu Trusty Tahr 14.04 on Raspberry Pi
 https://wiki.ubuntu.com/ARM/RaspberryPi
 
 
+Set Hostname (!)
+================
+sudo su
+echo "arpgate" > /etc/hostname 
+hostname arpgate
+
+
 Install Puppet
 ==============
 wget https://apt.puppetlabs.com/puppetlabs-release-precise.deb
@@ -17,6 +24,7 @@ sudo dpkg -i puppetlabs-release-precise.deb
 sudo apt-get update
 
 sudo apt-get install puppet
+
 
 
 Install Git
@@ -31,6 +39,9 @@ cd /home/ubuntu
 git clone https://github.com/arpgate/puppet
 
 cd puppet
+
+You might need to change IP settings in manifests/site.pp according to your network
+Default: 10.0.0.0/24, gateway 10.0.0.1, Raspberry Pi arpgate 10.0.0.253
 
 sudo puppet apply --modulepath=/home/ubuntu/puppet/modules manifests/site.pp
 
