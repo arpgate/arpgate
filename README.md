@@ -24,7 +24,7 @@ Windows: http://www.raspberrypi.org/documentation/installation/installing-images
 
 Login
 =====
-ubuntu/arpgate
+ubuntu/arpgate!
 
 SSH: ubuntu@10.0.0.253 / arpgate!
 
