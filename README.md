@@ -22,17 +22,21 @@ Mac: http://www.raspberrypi.org/documentation/installation/installing-images/mac
 Windows: http://www.raspberrypi.org/documentation/installation/installing-images/windows.md
 
 
-Logon
+Login
 =====
 ubuntu/arpgate
 
-SSH: ubuntu@10.0.0.253 / arpgate
+SSH: ubuntu@10.0.0.253 / arpgate!
 
 
+
+Build your own:
 
 Install Ubuntu Trusty Tahr 14.04 on Raspberry Pi
 ================================================
 https://wiki.ubuntu.com/ARM/RaspberryPi
+
+login: ubuntu/ubuntu
 
 
 Set Hostname (!)
@@ -43,6 +47,13 @@ echo "arpgate" > /etc/hostname
 
 hostname arpgate
 
+exit
+
+
+Install sshd
+============
+sudo apt-get install -y openssh-server
+
 
 Install Puppet
 ==============
@@ -52,13 +63,13 @@ sudo dpkg -i puppetlabs-release-precise.deb
 
 sudo apt-get update
 
-sudo apt-get install puppet
+sudo apt-get -y install puppet
 
 
 
 Install Git
 ===========
-sudo apt-get install git
+sudo apt-get -y install git
 
 
 Checkout arpgate/puppet repository
@@ -73,7 +84,9 @@ You might need to change IP settings in manifests/site.pp according to your netw
 
 network: 10.0.0.0/24, gateway: 10.0.0.1, Raspberry Pi - Arpgate: 10.0.0.253
 
-sudo puppet apply --modulepath=/home/ubuntu/puppet/modules manifests/site.pp
+sudo puppet apply --modulepath=/home/ubuntu/puppet/modules manifests/site.pp  
+
+This will take some time, ignore any warnings -:)
 
 
 Packets installed by Puppet
@@ -120,6 +133,11 @@ sudo apt-get install strongswan
 Optional: install Snort
 =======================
 sudo apt-get install snort
+
+
+Caution: To stop the DHCP server if you have another DHCP server in use:
+
+sudo service isc-dhcp-server stop
 
 
 
