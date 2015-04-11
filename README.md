@@ -38,6 +38,9 @@ https://wiki.ubuntu.com/ARM/RaspberryPi
 
 login: ubuntu/ubuntu
 
+Upgrade
+=======
+sudo apt-get update && sudo apt-get -y upgrade
 
 Set Hostname (!)
 ================
@@ -133,6 +136,11 @@ sudo apt-get install -y strongswan
 Optional: install Snort
 =======================
 sudo apt-get install -y snort
+
+
+Optional: Start syslog
+======================
+sudo sed -i 's/#$ModLoad imudp.so/$ModLoad imudp.so/' /etc/rsyslog.conf; sudo sed -i 's/#$UDPServerRun 514/$UDPServerRun 514/' /etc/rsyslog.conf; sudo service rsyslog restart
 
 
 Caution
