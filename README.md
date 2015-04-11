@@ -5,6 +5,8 @@ Requirements: Raspberry Pi 2 Model B, 8Gb micro SD card
 
 Download our image, copy to SD Card, plug in and boot your Rasbpberry Pi
 
+https://s3.amazonaws.com/arpgate.mathiasdietrich/public/2015-4-11-arpgate.rar
+
 In minutes you have a fully functional VPN, DHCP, DNS, PXE-Boot, IDS, IoT gateway!
 
 This is an alpha release, configuration has to be done manually like on any Ubuntu server
