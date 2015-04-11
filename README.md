@@ -60,8 +60,8 @@ Packets installed by Puppet
 - sqllite
 
 
-Mosquitto
-=========
+Install Mosquitto
+=================
 sudo apt-add-repository ppa:mosquitto-dev/mosquitto-ppa
 
 sudo apt-get update
@@ -71,8 +71,8 @@ sudo apt-get install mosquitto python-mosquitto
 sudo apt-get install mosquitto-clients
 
 
-StrongSwarm
-===========
+Install StrongSwarm
+===================
 sudo apt-get install strongswan
 
 
