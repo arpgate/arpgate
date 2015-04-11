@@ -90,6 +90,11 @@ Install StrongSwan
 sudo apt-get install strongswan
 
 
+Optional: install Snort
+=======================
+sudo apt-get install snort
+
+
 SD card
 =======
 logon:  ubuntu/arpgate
