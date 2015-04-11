@@ -11,7 +11,9 @@ https://wiki.ubuntu.com/ARM/RaspberryPi
 Set Hostname (!)
 ================
 sudo su
+
 echo "arpgate" > /etc/hostname 
+
 hostname arpgate
 
 
