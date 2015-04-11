@@ -135,7 +135,9 @@ Optional: install Snort
 sudo apt-get install snort
 
 
-Caution: To stop the DHCP server if you have another DHCP server in use:
+Caution
+=======
+To stop the DHCP server if you have another DHCP server on your network use:
 
 sudo service isc-dhcp-server stop
 
