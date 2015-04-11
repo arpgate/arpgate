@@ -3,6 +3,26 @@
 Requirements: Raspberry Pi 2 Model B, 8Gb micro SD card
 
 
+Download Arpgate SD image and copy to an sd card
+
+
+Copy the image to an SD card
+============================
+Linux: http://www.raspberrypi.org/documentation/installation/installing-images/linux.md
+
+Mac: http://www.raspberrypi.org/documentation/installation/installing-images/mac.md
+
+Windows: http://www.raspberrypi.org/documentation/installation/installing-images/windows.md
+
+
+Logon
+=====
+ubuntu/arpgate
+
+SSH: ubuntu@10.0.0.253 / arpgate
+
+
+
 Install Ubuntu Trusty Tahr 14.04 on Raspberry Pi
 ================================================
 https://wiki.ubuntu.com/ARM/RaspberryPi
@@ -95,18 +115,8 @@ Optional: install Snort
 sudo apt-get install snort
 
 
-SD card
-=======
-logon:  ubuntu/arpgate
 
 
-Copy the image to your SD card
-================================================
-Linux: http://www.raspberrypi.org/documentation/installation/installing-images/linux.md
-
-Mac: http://www.raspberrypi.org/documentation/installation/installing-images/mac.md
-
-Windows: http://www.raspberrypi.org/documentation/installation/installing-images/windows.md
 
 
 
