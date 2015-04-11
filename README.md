@@ -8,8 +8,8 @@ Install Ubuntu Trusty Tahr 14.04 on Raspberry Pi
 https://wiki.ubuntu.com/ARM/RaspberryPi
 
 
-Installation of Puppet
-======================
+Install Puppet
+==============
 wget https://apt.puppetlabs.com/puppetlabs-release-precise.deb
 
 sudo dpkg -i puppetlabs-release-precise.deb
