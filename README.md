@@ -1,4 +1,4 @@
-# arpgate
+# Arpgate
 
 Requirements: Raspberry Pi 2 Model B, 8Gb micro SD card
 
