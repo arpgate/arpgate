@@ -71,7 +71,7 @@ sudo apt-get install mosquitto python-mosquitto
 sudo apt-get install mosquitto-clients
 
 
-Install StrongSwarm
+Install StrongSwan
 ===================
 sudo apt-get install strongswan
 
