@@ -120,19 +120,19 @@ sudo apt-add-repository ppa:mosquitto-dev/mosquitto-ppa
 
 sudo apt-get update
 
-sudo apt-get install mosquitto python-mosquitto
+sudo apt-get install -y mosquitto python-mosquitto
 
-sudo apt-get install mosquitto-clients
+sudo apt-get install -y mosquitto-clients
 
 
 Install StrongSwan
 ===================
-sudo apt-get install strongswan
+sudo apt-get install -y strongswan
 
 
 Optional: install Snort
 =======================
-sudo apt-get install snort
+sudo apt-get install -y snort
 
 
 Caution
