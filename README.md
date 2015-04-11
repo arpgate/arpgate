@@ -41,6 +41,7 @@ git clone https://github.com/arpgate/puppet
 cd puppet
 
 You might need to change IP settings in manifests/site.pp according to your network
+
 Default: 10.0.0.0/24, gateway 10.0.0.1, Raspberry Pi arpgate 10.0.0.253
 
 sudo puppet apply --modulepath=/home/ubuntu/puppet/modules manifests/site.pp
