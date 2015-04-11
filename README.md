@@ -2,17 +2,10 @@
 
 Requirements: Raspberry Pi 2 Model B, 8Gb micro SD card
 
+
 Installation of Ubuntu Trusty Tahr 14.04 on Raspberry Pi
 =========================================================
- https://wiki.ubuntu.com/ARM/RaspberryPi
- 
-Copy the image to your SD card
-================================================
-Linux: http://www.raspberrypi.org/documentation/installation/installing-images/linux.md
-
-Mac: http://www.raspberrypi.org/documentation/installation/installing-images/mac.md
-
-Windows: http://www.raspberrypi.org/documentation/installation/installing-images/windows.md
+https://wiki.ubuntu.com/ARM/RaspberryPi
 
 
 Installation of Puppet on the Raspberry Pi
@@ -25,45 +18,77 @@ sudo apt-get update
 
 sudo apt-get install puppet
 
+
 Installation of Git on the Raspberry Pi
 =======================================
 sudo apt-get install git
 
-Checkout arpgate/puppet repository
-==================================
+
+Checkout arpgate/puppet repository on the Raspberry Pi
+======================================================
+cd /home/ubuntu
+
 git clone https://github.com/arpgate/puppet
 
 cd puppet
 
-sudo puppet apply manifests/arpgate.pp
+sudo puppet apply --modulepath=/home/ubuntu/puppet/modules manifests/site.pp
 
 
-Upcoming
-========
-We are working on a Puppet script to install the following Arpgate components:
-- Golang
-- SQLite 3  
+Packets installed by Puppet
+===========================
+- golang
+
 - nmap
+
+- tmux
+
+- ntp
+
 - iptables
-- HAproxy
-- Nginx
+
+- hAproxy
+
+- nginx
+
+- tftp-ha
+
 - isc-dhcp-server
-- TFTPD-HPA
-- Bind 9
-- Snort
-- MQTT
-- StrongSwarm
-- SQLLite3
 
-We will make a download for the SD card image available once the puppet build is completed
+- bind 9
 
-The arpgate UI
-==============
+- sqllite
 
-The ui will be based on bootstrap: http://devoops.me/themes/devoops/
-https://github.com/devoopsme/devoops.
 
-The UI connects using JQuery to the REST service and the MQTT broker.
+Mosquitto
+=========
+sudo apt-add-repository ppa:mosquitto-dev/mosquitto-ppa
+
+sudo apt-get update
+
+sudo apt-get install mosquitto python-mosquitto
+
+sudo apt-get install mosquitto-clients
+
+
+StrongSwarm
+===========
+sudo apt-get install strongswan
+
+
+SD card
+=======
+logon:  ubuntu/arpgate
+
+
+Copy the image to your SD card
+================================================
+Linux: http://www.raspberrypi.org/documentation/installation/installing-images/linux.md
+
+Mac: http://www.raspberrypi.org/documentation/installation/installing-images/mac.md
+
+Windows: http://www.raspberrypi.org/documentation/installation/installing-images/windows.md
+
 
 
 
