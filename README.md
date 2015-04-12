@@ -106,7 +106,7 @@ Packets installed by Puppet
 
 - iptables
 
-- hAproxy
+- haproxy
 
 - nginx
 
