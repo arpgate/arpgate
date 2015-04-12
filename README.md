@@ -106,7 +106,7 @@ Packets installed by Puppet
 
 - iptables
 
-- hAproxy
+- haproxy
 
 - nginx
 
@@ -153,7 +153,7 @@ sudo sysctl -p
 sudo vi /etc/rc.local and add the following to the bottom, before exit0<br/>
 /sbin/iptables -t nat -A POSTROUTING -s 10.0.0.0/8 -o eth0 -j MASQUERADE
 
-update-rc.d -f ipsec remove
+update-rc.d -f ipsec remove<br>
 update-rc.d -f ipsec start 41 2 3 4 5 . stop 91 1 . start 34 0 6 .
 
 Caution
@@ -169,15 +169,5 @@ wget --no-check-certificate  https://packages.raspberry-hosting.com/haproxy-rasp
 sudo dpkg -i ./haproxy_1.5.9-1_armhf.deb
 
 sudo wget --no-check-certificate  https://packages.raspberry-hosting.com/haproxy-raspberry-pi/etc/init.d/haproxy -O
-
-
-
-
-
-
-
-
-
-
 
 
