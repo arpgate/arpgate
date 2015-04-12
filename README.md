@@ -140,11 +140,6 @@ Optional: install Snort
 sudo apt-get install -y snort
 
 
-Optional: Start syslog
-======================
-sudo sed -i 's/#$ModLoad imudp.so/$ModLoad imudp.so/' /etc/rsyslog.conf; sudo sed -i 's/#$UDPServerRun 514/$UDPServerRun 514/' /etc/rsyslog.conf; sudo service rsyslog restart
-
-
 Caution
 =======
 To stop the DHCP server if you have another DHCP server on your network use:
