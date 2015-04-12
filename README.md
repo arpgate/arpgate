@@ -132,18 +132,29 @@ sudo apt-get install -y mosquitto-clients
 
 Install StrongSwan
 ===================
-sudo apt-get install -y strongswan
-
+sudo vi /etc/apt/sources.list  (add the next line) <br>
+deb http://mirrordirector.raspbian.org/raspbian/ jessie main contrib non-free rpi<br>
+sudo apt-get update<br>
+sudo apt-get install -t jessie strongswan <br>
+sudo apt-get install -t jessie libcharon-extra-plugins<br>
 
 Optional: install Snort
 =======================
 sudo apt-get install -y snort
 
 
-Optional: Start syslog
-======================
-sudo sed -i 's/#$ModLoad imudp.so/$ModLoad imudp.so/' /etc/rsyslog.conf; sudo sed -i 's/#$UDPServerRun 514/$UDPServerRun 514/' /etc/rsyslog.conf; sudo service rsyslog restart
+Enable packet forwarding
+========================
+sudo vi /etc/sysctl.conf<br>
+net.ipv4.ip_forward=1
 
+sudo sysctl -p
+
+sudo vi /etc/rc.local and add the following to the bottom, before exit0<br/>
+/sbin/iptables -t nat -A POSTROUTING -s 10.0.0.0/8 -o eth0 -j MASQUERADE
+
+update-rc.d -f ipsec remove
+update-rc.d -f ipsec start 41 2 3 4 5 . stop 91 1 . start 34 0 6 .
 
 Caution
 =======
