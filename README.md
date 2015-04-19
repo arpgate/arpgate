@@ -15,8 +15,8 @@ Work on a cli and a web UI are in progress at project arpgate/cli and arpgate/se
 
 
 
-Copy the image to an SD card
-============================
+Copy the Arpgate image to an SD card
+====================================
 Linux: http://www.raspberrypi.org/documentation/installation/installing-images/linux.md
 
 Mac: http://www.raspberrypi.org/documentation/installation/installing-images/mac.md
