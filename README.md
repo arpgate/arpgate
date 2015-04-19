@@ -169,31 +169,18 @@ sudo vi /etc/rc.local and add the following to the bottom, before exit0<br/>
 update-rc.d -f ipsec remove<br>
 update-rc.d -f ipsec start 41 2 3 4 5 . stop 91 1 . start 34 0 6 .
 
-Iptables
-========
-sudo apt-get install iptables-persistent
-
-sudo iptables -A INPUT -p tcp --dport ssh -j ACCEPT<br>
-
-sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT<br>
-sudo iptables -A INPUT -p tcp --dport 8888 -j ACCEPT<br>
-
-sudo iptables -A INPUT -p tcp --dport 1701 -j ACCEPT<br>
-sudo iptables -A INPUT -p udp --dport 4500 -j ACCEPT<br>
-sudo iptables -A INPUT -p udp --dport 500 -j ACCEPT<br>
-
-sudo iptables -A INPUT -p tcp --dport 1883 -j ACCEPT<br>
-sudo iptables -A INPUT -p tcp --dport 8883 -j ACCEPT<br>
-sudo iptables -A INPUT -p tcp --dport 8884 -j ACCEPT<br>
-sudo iptables -I INPUT 1 -i lo -j ACCEPT<br>
-
-sudo iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT<br>
-
-sudo iptables -A INPUT -s 10.0.0.0/24 -j ACCEPT<br>
-
-sudo iptables -P INPUT DROP
-
-sudo ufw enable
+ufw - firewall
+==============
+sudo ufw allow 80/tcp<br>
+sudo ufw allow 8888/tcp<br>
+sudo ufw allow 1701/tcp<br>
+sudo ufw allow 4500/udp<br>
+sudo ufw allow 500/udp<br>
+sudo ufw allow 1883/tcp<br>
+sudo ufw allow 8883/tcp<br>
+sudo ufw allow 8884/tcp<br>
+sudo ufw allow from 10.0.0.0/24<br>
+sudo ufw enable<br>
 
 Caution
 =======
