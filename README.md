@@ -7,7 +7,8 @@ Download our image, copy to SD Card, plug in and boot your Rasbpberry Pi 2
 
 https://s3.amazonaws.com/arpgate/public/2015-4-11-arpgate.rar
 
-In minutes you have a fully functional firewalled VPN, DHCP, DNS, PXE-Boot, TFTP, MQTT, IDS, gateway!
+In minutes you have a fully functional firewalled VPN, DHCP, DNS, PXE-Boot, TFTP, MQTT, IDS, gateway!<br>
+Also installed is Docker 1.0.1 for running arm7 based containers.
 
 This is an alpha release, configuration for now has to be done manually like with any Ubuntu server
 
