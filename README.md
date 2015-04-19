@@ -138,6 +138,14 @@ sudo apt-get update<br>
 sudo apt-get install -t jessie strongswan <br>
 sudo apt-get install -t jessie libcharon-extra-plugins<br>
 
+Install Monit
+=============
+sudo apt-get install -y monit
+ 
+Optional: install Docker
+========================
+sudo apt-get install -y docker.io
+
 Optional: install Snort
 =======================
 sudo apt-get install -y snort
