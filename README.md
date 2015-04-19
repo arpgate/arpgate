@@ -7,11 +7,11 @@ Download our image, copy to SD Card, plug in and boot your Rasbpberry Pi
 
 https://s3.amazonaws.com/arpgate/public/2015-4-11-arpgate.rar
 
-In minutes you have a fully functional VPN, DHCP, DNS, PXE-Boot, IDS, IoT gateway!
+In minutes you have a fully functional firewalled VPN, DHCP, DNS, PXE-Boot, TFTP, MQTT, IDS, gateway!
 
-This is an alpha release, configuration has to be done manually like on any Ubuntu server
+This is an alpha release, configuration for now has to be done manually like with any Ubuntu server
 
-Work on the UI is in progress at project arpgate/manage
+Work on a cli and a web UI are in progress at project arpgate/cli and arpgate/service. 
 
 
 
