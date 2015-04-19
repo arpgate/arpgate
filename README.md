@@ -52,8 +52,8 @@ sudo vi /etc/bind/zones/db.home.local<br>
 sudo service bind9 restart<br>
 
 
-Build your own SD Card image from scratch
-=========================================
+Building a SD Card image from scratch:
+======================================
 
 Install Ubuntu Trusty Tahr 14.04 on Raspberry Pi
 ================================================
