@@ -164,6 +164,32 @@ sudo vi /etc/rc.local and add the following to the bottom, before exit0<br/>
 update-rc.d -f ipsec remove<br>
 update-rc.d -f ipsec start 41 2 3 4 5 . stop 91 1 . start 34 0 6 .
 
+Iptables
+========
+sudo apt-get install iptables-persistent
+
+sudo iptables -A INPUT -p tcp --dport ssh -j ACCEPT
+
+sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 8888 -j ACCEPT
+
+sudo iptables -A INPUT -p tcp --dport 1701 -j ACCEPT
+sudo iptables -A INPUT -p udp --dport 4500 -j ACCEPT
+sudo iptables -A INPUT -p udp --dport 500 -j ACCEPT
+
+sudo iptables -A INPUT -p tcp --dport 1883 -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 8883 -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 8884 -j ACCEPT
+sudo iptables -I INPUT 1 -i lo -j ACCEPT
+
+sudo iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT
+
+sudo iptables -A INPUT -s 10.0.0.0/24 -j ACCEPT
+
+sudo iptables -P INPUT DROP
+
+sudo ufw enable
+
 Caution
 =======
 To stop the DHCP server if you have another DHCP server on your network use:
