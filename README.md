@@ -30,7 +30,26 @@ ubuntu/arpgate!
 
 SSH: ubuntu@10.0.0.253 / arpgate!
 
+Set VPN Security Credentials
+===========================
+sudo vi /etc/ipsec.secrets<br>
+set SHARED SECRET and User PWD
+sudo service ipsec restart
 
+Network
+=======
+If the 10.0.0.0 network needs to be changed, may be you use 192.168.0.0 or 192.168.1.0 ?<br>
+sudo vi /etc/network/interfaces<br>
+sudo ifdown eth0 && sudo ifup eth0<br>
+
+If you  use the DHCP server:<br>
+sudo vi /etc/dhcp/dhcpd.conf<br>
+sudo service isc-dhcp-server restart<br>
+
+If you  use the DNS server:<br>
+sudo vi /etc/bind/zones/db.0.0.10.IN-ADDR.ARPA<br>
+sudo vi /etc/bind/zones/db.home.local<br>
+sudo service bind9 restart<br>
 
 Build your own:
 
