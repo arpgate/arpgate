@@ -168,23 +168,23 @@ Iptables
 ========
 sudo apt-get install iptables-persistent
 
-sudo iptables -A INPUT -p tcp --dport ssh -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport ssh -j ACCEPT<br>
 
-sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
-sudo iptables -A INPUT -p tcp --dport 8888 -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT<br>
+sudo iptables -A INPUT -p tcp --dport 8888 -j ACCEPT<br>
 
-sudo iptables -A INPUT -p tcp --dport 1701 -j ACCEPT
-sudo iptables -A INPUT -p udp --dport 4500 -j ACCEPT
-sudo iptables -A INPUT -p udp --dport 500 -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 1701 -j ACCEPT<br>
+sudo iptables -A INPUT -p udp --dport 4500 -j ACCEPT<br>
+sudo iptables -A INPUT -p udp --dport 500 -j ACCEPT<br>
 
-sudo iptables -A INPUT -p tcp --dport 1883 -j ACCEPT
-sudo iptables -A INPUT -p tcp --dport 8883 -j ACCEPT
-sudo iptables -A INPUT -p tcp --dport 8884 -j ACCEPT
-sudo iptables -I INPUT 1 -i lo -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 1883 -j ACCEPT<br>
+sudo iptables -A INPUT -p tcp --dport 8883 -j ACCEPT<br>
+sudo iptables -A INPUT -p tcp --dport 8884 -j ACCEPT<br>
+sudo iptables -I INPUT 1 -i lo -j ACCEPT<br>
 
-sudo iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT
+sudo iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT<br>
 
-sudo iptables -A INPUT -s 10.0.0.0/24 -j ACCEPT
+sudo iptables -A INPUT -s 10.0.0.0/24 -j ACCEPT<br>
 
 sudo iptables -P INPUT DROP
 
