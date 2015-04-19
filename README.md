@@ -78,7 +78,7 @@ exit
 Create arpgate user
 ==================
 sudo adduser arpgate<br>
-pwd: arpgate!<br>
+pwd: <secret><br>
 sudo adduser arpgate sudo<br>
 
 Install sshd
