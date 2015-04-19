@@ -36,9 +36,9 @@ Set VPN Security Credentials
 ===========================
 sudo vi /etc/ipsec.secrets<br>
 set SHARED SECRET and User PWD like this:<br>
-%any %any : PSK "<sharedsecret>"<br>
-arpgate : XAUTH "<secret>"<br>
-10.0.0.253 : XAUTH ""<secret>"<br>
+%any %any : PSK "[sharedsecret]"<br>
+arpgate : XAUTH "[secret]"<br>
+10.0.0.253 : XAUTH "[secret]"<br>
 
 sudo service ipsec restart
 
