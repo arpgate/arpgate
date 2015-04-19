@@ -170,11 +170,10 @@ To stop the DHCP server if you have another DHCP server on your network use:
 
 sudo service isc-dhcp-server stop
 
+Enable haproxy
+==============
+sudo vi /etc/default/haproxy     set ENABLED=1
 
-Fix for haproxy
-===============
-wget --no-check-certificate  https://packages.raspberry-hosting.com/haproxy-raspberry-pi/haproxy_1.5.9-1_armhf.deb
-sudo dpkg -i ./haproxy_1.5.9-1_armhf.deb
 
 sudo wget --no-check-certificate  https://packages.raspberry-hosting.com/haproxy-raspberry-pi/etc/init.d/haproxy -O
 
