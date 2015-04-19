@@ -173,8 +173,3 @@ sudo service isc-dhcp-server stop
 Enable haproxy
 ==============
 sudo vi /etc/default/haproxy     set ENABLED=1
-
-
-sudo wget --no-check-certificate  https://packages.raspberry-hosting.com/haproxy-raspberry-pi/etc/init.d/haproxy -O
-
-
