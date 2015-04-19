@@ -3,7 +3,7 @@
 Requirements: Raspberry Pi 2 Model B, 8Gb micro SD card
 
 
-Download our image, copy to SD Card, plug in and boot your Rasbpberry Pi
+Download our image, copy to SD Card, plug in and boot your Rasbpberry Pi 2
 
 https://s3.amazonaws.com/arpgate/public/2015-4-11-arpgate.rar
 
