@@ -54,6 +54,11 @@ hostname arpgate
 
 exit
 
+Create arpgate user
+==================
+sudo adduser arpgate<br>
+pwd: arpgate!<br>
+sudo adduser arpgate sudo<br>
 
 Install sshd
 ============
