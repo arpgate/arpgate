@@ -51,7 +51,9 @@ sudo vi /etc/bind/zones/db.0.0.10.IN-ADDR.ARPA<br>
 sudo vi /etc/bind/zones/db.home.local<br>
 sudo service bind9 restart<br>
 
-Build your own:
+
+Build your own SD Card image from scratch
+=========================================
 
 Install Ubuntu Trusty Tahr 14.04 on Raspberry Pi
 ================================================
