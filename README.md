@@ -182,6 +182,9 @@ Optional: install Snort
 =======================
 sudo apt-get install -y snort
 
+Optional: install Mercurial
+===========================
+sudo apt-get install -y mercurial
 
 Enable packet forwarding
 ========================
